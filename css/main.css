@@ -97,6 +97,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+  height:100vh;
+  background:black;
+}
 .stick{
   height:200px;
   border:2px solid black;
