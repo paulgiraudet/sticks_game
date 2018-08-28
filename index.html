@@ -12,6 +12,8 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Rajdhani" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -22,62 +24,99 @@
   <div class="container">
     <div class="row">
       <div class="col-8 mx-auto">
-        <div class="container-fluid mt-5">
-          <div class="row">
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-            <div class="col stick bg-danger">
-            </div>
-          </div>
-        </div>
+        <h1>The Glowing</h1>
       </div>
 
+
+      <!-- <div class="col-12 mx-auto"> -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+            <div class="col sticks">
+              <img class="img-fluid stick" alt="glowing" src="img/baton.png">
+            </div>
+
+          </div>
+          <!-- end of row -->
+        </div>
+        <!-- end of container -->
+      <!-- </div> -->
+
+      <!-- function for ending player turn plus restart -->
       <div class="col-8 mx-auto">
-        <input type="button" value="end of turn" onclick="winOnly()" class="w-25 mx-auto d-block">
+        <p id="result" class="turn" onclick="winOnly()">End of Turn</p>
       </div>
-      <div class="col-8 mx-auto">
-        <p id="result" class="text-center">YOU LOSE</p>
+
+      <div class="item1 d-none d-md-block">
+        <a href="#openModal1" class="rules"><i class="fas fa-align-justify"></i></a>
       </div>
+
+      <div id="openModal1" class="modal-item-1">
+        <div>
+          <a href="#close" title="Close" class="fermer-item1">
+            <i class="fa fa-times fa-3x"></i>
+          </a>
+          <div class="modal-item1">
+
+
+            <!-- end of container -->
+          </div>
+          <!-- end of modal-item -->
+        </div>
+
+      </div>
+
     </div>
+    <!-- end of main row -->
   </div>
+  <!-- end of main container -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>

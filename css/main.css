@@ -101,21 +101,74 @@ body{
   height:100vh;
   background:black;
 }
-.stick{
-  height:200px;
-  border:2px solid black;
-}
 
-.stick:first-child{
-  border-left:4px solid black;
-}
-
-.stick:last-child{
-  border-right:4px solid black;
+h1{
+  font-family: 'Monoton', cursive;
+  font-size:70px;
+  text-align:center;
+  color: #fee92e;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fee92e, 0 0 35px #fee92e, 0 0 40px #fee92e, 0 0 50px #fee92e, 0 0 75px #fee92e;
+  padding-bottom:40px;
 }
 
 
+.sticks{
+  height:220px;
+  transition:all 0.7s;
+}
 
+.turn, .rules{
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  font-weight:bold;
+  font-family: 'Rajdhani', sans-serif;
+  color: #fee92e;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fee92e, 0 0 35px #fee92e, 0 0 40px #fee92e, 0 0 50px #fee92e, 0 0 75px #fee92e;
+  cursor:pointer;
+}
+
+.turn{
+  text-align:center;
+  padding:55px 0 0;
+  font-size:50px;
+}
+
+.turn:hover{
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+}
+
+.rules{
+  position:absolute;
+  bottom:0;
+  left:10px;
+  font-size:30px;
+}
+
+.rules:hover{
+  text-decoration:none;
+
+}
+
+@-webkit-keyframes neon3 {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fee92e, 0 0 35px #fee92e, 0 0 40px #fee92e, 0 0 50px #fee92e, 0 0 75px #fee92e;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fee92e, 0 0 70px #fee92e, 0 0 80px #fee92e, 0 0 100px #fee92e, 0 0 150px #fee92e;
+  }
+}
+
+@-moz-keyframes neon3 {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fee92e, 0 0 35px #fee92e, 0 0 40px #fee92e, 0 0 50px #fee92e, 0 0 75px #fee92e;
+  }
+  to {
+    text-shadow: 0 0 7px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fee92e, 0 0 50px #fee92e, 0 0 60px #fee92e, 0 0 75px #fee92e, 0 0 100px #fee92e;
+  }
+}
 
 
 
